@@ -46,13 +46,12 @@ results/figure/sierra.png
 
 # Clean up
 clean :
-	rm -rf results/isles.dat \
-	results/abyss.dat \
-	results/last.dat \
-	results/sierra.dat
-	rm -rf results/figure/isles.png \
-	results/figure/abyss.png \
-
-	results/figure/last.png \
-	results/figure/sierra.png
+	rm -f results/isles.dat
+	rm -f results/abyss.dat
+	rm -f results/last.dat
+	rm -f results/sierra.dat
+	rm -f results/figure/isles.png
+	rm -f results/figure/abyss.png
+	rm -f results/figure/last.png
+	rm -f results/figure/sierra.png
 	rm -rf report/_build
