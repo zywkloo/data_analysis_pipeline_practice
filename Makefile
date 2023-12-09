@@ -2,7 +2,7 @@
 DATA_DIR=data
 RESULTS_DIR=results
 FIGURE_DIR=results/figure
-BUILD_DIR=results/build
+BUILD_DIR=results/_build
 
 # Phony targets
 .PHONY: all clean
