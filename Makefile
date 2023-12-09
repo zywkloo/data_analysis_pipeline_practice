@@ -2,6 +2,7 @@
 DATA_DIR=data
 RESULTS_DIR=results
 FIGURE_DIR=results/figure
+BUILD_DIR=results/build
 
 # Phony targets
 .PHONY: all clean
@@ -14,7 +15,7 @@ all: $(FIGURE_DIR)/isles.png $(FIGURE_DIR)/abyss.png $(FIGURE_DIR)/last.png $(FI
 clean:
 	rm -f $(RESULTS_DIR)/*.dat
 	rm -f $(FIGURE_DIR)/*.png
-	# Add commands to clean Jupyter book build artifacts
+	rm -f $(BUILD_DIR)/*
 
 # Word count data generation
 $(RESULTS_DIR)/%.dat: $(DATA_DIR)/%.txt
