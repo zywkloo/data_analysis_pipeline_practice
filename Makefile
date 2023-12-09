@@ -15,7 +15,7 @@ all: $(FIGURE_DIR)/isles.png $(FIGURE_DIR)/abyss.png $(FIGURE_DIR)/last.png $(FI
 clean:
 	rm -f $(RESULTS_DIR)/*.dat
 	rm -f $(FIGURE_DIR)/*.png
-	rm -f $(BUILD_DIR)/*
+	rm -rf $(BUILD_DIR)/*
 
 # Word count data generation
 $(RESULTS_DIR)/%.dat: $(DATA_DIR)/%.txt
